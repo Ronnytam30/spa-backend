@@ -1,383 +1,366 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking - Luxe Glow Spa</title>
-    <link rel="stylesheet" href="booking.css" />
-  </head>
-  <body>
-    <!-- Booking Header with Home Button -->
-    <header class="booking-header">
-      <a href="spa Homepage.html" class="home-btn">Home</a>
-    </header>
-    
-    <div class="booking-system" id="booking-system">
-      <!-- Progress Bar -->
-      <div class="progress-bar">
-        <div class="progress-step" data-step="1">
-          <div class="step-number">1</div>
-          <div class="step-label">Basic Info</div>
-        </div>
-        <div class="progress-step" data-step="2">
-          <div class="step-number">2</div>
-          <div class="step-label">Select Services</div>
-        </div>
-        <div class="progress-step" data-step="3">
-          <div class="step-number">3</div>
-          <div class="step-label">Summary</div>
-        </div>
-        <div class="progress-step" data-step="4">
-          <div class="step-number">4</div>
-          <div class="step-label">Confirm</div>
-        </div>
-      </div>
-      
-      <!-- Step 1: Basic Information -->
-      <div class="booking-page" id="booking-page-1">
-        <h2>Basic Information</h2>
-        <div class="form-group">
-          <label for="name">NAME</label>
-          <input type="text" id="name" name="name" />
-        </div>
-        <div class="form-group">
-          <label for="phone">PHONE NUMBER</label>
-          <input type="text" id="phone" name="phone" />
-        </div>
-        <div class="form-group">
-          <label for="email">EMAIL</label>
-          <input type="text" id="email" name="email" />
-        </div>
-        <div class="form-group">
-          <label for="date">CHOOSE A DATE</label>
-          <select id="date" name="date">
-            <option value="">Select a date</option>
-            <!-- Add your date options -->
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="time-range">CHOOSE A TIME RANGE</label>
-          <select id="time-range" name="time-range">
-            <option value="">Select a time</option>
-            <!-- Add your time options -->
-          </select>
-        </div>
-        <div class="booking-buttons">
-          <button class="next-btn" id="to-step-2">Next</button>
-        </div>
-      </div>
-      
-      <!-- Step 2: Service Selection (Card Layout) -->
-      <div class="booking-page" id="booking-page-2" style="display: none;">
-        <h2>Select Your Services</h2>
-        <div class="service-categories">
-          <!-- Massages Category -->
-          <div class="service-category">
-            <h3>Massages</h3>
-            <div class="service-card-container">
-              <!-- Swedish Massage Card -->
-              <div class="service-option-card" data-service="Swedish Massage">
-                <h4>Swedish Massage</h4>
-                <p class="service-description">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking - Luxe Glow Spa</title>
+<link href="booking.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Booking Header with Home Button -->
+<header class="booking-header">
+<a class="home-btn" href="spa Homepage.html">Home</a>
+</header>
+<div class="booking-system" id="booking-system">
+<!-- Progress Bar -->
+<div class="progress-bar">
+<div class="progress-step" data-step="1">
+<div class="step-number">1</div>
+<div class="step-label">Basic Info</div>
+</div>
+<div class="progress-step" data-step="2">
+<div class="step-number">2</div>
+<div class="step-label">Select Services</div>
+</div>
+<div class="progress-step" data-step="3">
+<div class="step-number">3</div>
+<div class="step-label">Summary</div>
+</div>
+<div class="progress-step" data-step="4">
+<div class="step-number">4</div>
+<div class="step-label">Confirm</div>
+</div>
+</div>
+<!-- Step 1: Basic Information -->
+<div class="booking-page" id="booking-page-1">
+<h2>Basic Information</h2>
+<div class="form-group">
+<label for="name">NAME</label>
+<input id="name" name="name" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">PHONE NUMBER</label>
+<input id="phone" name="phone" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">EMAIL</label>
+<input id="email" name="email" type="text"/>
+</div>
+<div class="form-group">
+<label for="date">CHOOSE A DATE</label>
+<select id="date" name="date"><option value="">Select a date</option><option value="2025-05-06">2025-05-06</option><option value="2025-05-07">2025-05-07</option><option value="2025-05-08">2025-05-08</option><option value="2025-05-09">2025-05-09</option><option value="2025-05-10">2025-05-10</option><option value="2025-05-11">2025-05-11</option><option value="2025-05-12">2025-05-12</option><option value="2025-05-13">2025-05-13</option><option value="2025-05-14">2025-05-14</option><option value="2025-05-15">2025-05-15</option><option value="2025-05-16">2025-05-16</option><option value="2025-05-17">2025-05-17</option><option value="2025-05-18">2025-05-18</option><option value="2025-05-19">2025-05-19</option><option value="2025-05-20">2025-05-20</option><option value="2025-05-21">2025-05-21</option><option value="2025-05-22">2025-05-22</option><option value="2025-05-23">2025-05-23</option><option value="2025-05-24">2025-05-24</option><option value="2025-05-25">2025-05-25</option><option value="2025-05-26">2025-05-26</option><option value="2025-05-27">2025-05-27</option><option value="2025-05-28">2025-05-28</option><option value="2025-05-29">2025-05-29</option><option value="2025-05-30">2025-05-30</option><option value="2025-05-31">2025-05-31</option><option value="2025-06-01">2025-06-01</option><option value="2025-06-02">2025-06-02</option><option value="2025-06-03">2025-06-03</option><option value="2025-06-04">2025-06-04</option></select>
+</div>
+<div class="form-group">
+<label for="time-range">CHOOSE A TIME RANGE</label>
+<select id="time-range" name="time-range"><option value="">Select a time</option><option value="09:00 AM">09:00 AM</option><option value="10:00 AM">10:00 AM</option><option value="11:00 AM">11:00 AM</option><option value="12:00 PM">12:00 PM</option><option value="01:00 PM">01:00 PM</option><option value="02:00 PM">02:00 PM</option><option value="03:00 PM">03:00 PM</option><option value="04:00 PM">04:00 PM</option><option value="05:00 PM">05:00 PM</option><option value="06:00 PM">06:00 PM</option></select>
+</div>
+<div class="booking-buttons">
+<button class="next-btn" id="to-step-2">Next</button>
+</div>
+</div>
+<!-- Step 2: Service Selection (Card Layout) -->
+<div class="booking-page" id="booking-page-2" style="display: none;">
+<h2>Select Your Services</h2>
+<div class="service-categories">
+<!-- Massages Category -->
+<div class="service-category">
+<h3>Massages</h3>
+<div class="service-card-container">
+<!-- Swedish Massage Card -->
+<div class="service-option-card" data-service="Swedish Massage">
+<h4>Swedish Massage</h4>
+<p class="service-description">
                   Experience this relaxation massage with our trained professionals. This treatment combines Swedish techniques with aromatherapy.
                 </p>
-                <label for="duration-swedish">Choose Duration:</label>
-                <select id="duration-swedish">
-                  <option value="60min">$120 - 60min</option>
-                  <option value="90min">$180 - 90min</option>
-                  <option value="120min">$240 - 120min</option>
-                </select>
-                <label for="staff-swedish">Select Staff:</label>
-                <select id="staff-swedish">
-                  <option value="staff1">Staff 1</option>
-                  <option value="staff2">Staff 2</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Deep Tissue Massage Card -->
-              <div class="service-option-card" data-service="Deep Tissue Massage">
-                <h4>Deep Tissue Massage</h4>
-                <p class="service-description">
+<label for="duration-swedish">Choose Duration:</label>
+<select id="duration-swedish">
+<option value="60min">$120 - 60min</option>
+<option value="90min">$180 - 90min</option>
+<option value="120min">$240 - 120min</option>
+</select>
+<label for="staff-swedish">Select Staff:</label>
+<select id="staff-swedish">
+<option value="staff1">Staff 1</option>
+<option value="staff2">Staff 2</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Deep Tissue Massage Card -->
+<div class="service-option-card" data-service="Deep Tissue Massage">
+<h4>Deep Tissue Massage</h4>
+<p class="service-description">
                   A focused massage targeting deeper muscle layers for chronic tension relief.
                 </p>
-                <label for="duration-deep">Choose Duration:</label>
-                <select id="duration-deep">
-                  <option value="60min">$130 - 60min</option>
-                  <option value="90min">$190 - 90min</option>
-                </select>
-                <label for="staff-deep">Select Staff:</label>
-                <select id="staff-deep">
-                  <option value="staff3">Staff 3</option>
-                  <option value="staff4">Staff 4</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Sport Massage Card -->
-              <div class="service-option-card" data-service="Sport Massage">
-                <h4>Sport Massage</h4>
-                <p class="service-description">
+<label for="duration-deep">Choose Duration:</label>
+<select id="duration-deep">
+<option value="60min">$130 - 60min</option>
+<option value="90min">$190 - 90min</option>
+</select>
+<label for="staff-deep">Select Staff:</label>
+<select id="staff-deep">
+<option value="staff3">Staff 3</option>
+<option value="staff4">Staff 4</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Sport Massage Card -->
+<div class="service-option-card" data-service="Sport Massage">
+<h4>Sport Massage</h4>
+<p class="service-description">
                   Tailored to enhance performance and speed recovery for active lifestyles.
                 </p>
-                <label for="duration-sport">Choose Duration:</label>
-                <select id="duration-sport">
-                  <option value="60min">$125 - 60min</option>
-                  <option value="90min">$185 - 90min</option>
-                </select>
-                <label for="staff-sport">Select Staff:</label>
-                <select id="staff-sport">
-                  <option value="staff5">Staff 5</option>
-                  <option value="staff6">Staff 6</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Shiatsu Massage Card -->
-              <div class="service-option-card" data-service="Shiatsu Massage">
-                <h4>Shiatsu Massage</h4>
-                <p class="service-description">
+<label for="duration-sport">Choose Duration:</label>
+<select id="duration-sport">
+<option value="60min">$125 - 60min</option>
+<option value="90min">$185 - 90min</option>
+</select>
+<label for="staff-sport">Select Staff:</label>
+<select id="staff-sport">
+<option value="staff5">Staff 5</option>
+<option value="staff6">Staff 6</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Shiatsu Massage Card -->
+<div class="service-option-card" data-service="Shiatsu Massage">
+<h4>Shiatsu Massage</h4>
+<p class="service-description">
                   Uses rhythmic pressure to stimulate acupressure points and restore balance.
                 </p>
-                <label for="duration-shiatsu">Choose Duration:</label>
-                <select id="duration-shiatsu">
-                  <option value="60min">$140 - 60min</option>
-                  <option value="90min">$200 - 90min</option>
-                </select>
-                <label for="staff-shiatsu">Select Staff:</label>
-                <select id="staff-shiatsu">
-                  <option value="staff7">Staff 7</option>
-                  <option value="staff8">Staff 8</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Hot Stone Massage Card -->
-              <div class="service-option-card" data-service="Hot Stone Massage">
-                <h4>Hot Stone Massage</h4>
-                <p class="service-description">
+<label for="duration-shiatsu">Choose Duration:</label>
+<select id="duration-shiatsu">
+<option value="60min">$140 - 60min</option>
+<option value="90min">$200 - 90min</option>
+</select>
+<label for="staff-shiatsu">Select Staff:</label>
+<select id="staff-shiatsu">
+<option value="staff7">Staff 7</option>
+<option value="staff8">Staff 8</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Hot Stone Massage Card -->
+<div class="service-option-card" data-service="Hot Stone Massage">
+<h4>Hot Stone Massage</h4>
+<p class="service-description">
                   Indulge in deep relaxation as warm stones melt away tension.
                 </p>
-                <label for="duration-hotstone">Choose Duration:</label>
-                <select id="duration-hotstone">
-                  <option value="60min">$150 - 60min</option>
-                  <option value="90min">$210 - 90min</option>
-                </select>
-                <label for="staff-hotstone">Select Staff:</label>
-                <select id="staff-hotstone">
-                  <option value="staff9">Staff 9</option>
-                  <option value="staff10">Staff 10</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Facials Category -->
-          <div class="service-category">
-            <h3>Facials</h3>
-            <div class="service-card-container">
-              <!-- Gua Sha Facial Card -->
-              <div class="service-option-card" data-service="Gua Sha Facial">
-                <h4>Gua Sha Facial</h4>
-                <p class="service-description">
+<label for="duration-hotstone">Choose Duration:</label>
+<select id="duration-hotstone">
+<option value="60min">$150 - 60min</option>
+<option value="90min">$210 - 90min</option>
+</select>
+<label for="staff-hotstone">Select Staff:</label>
+<select id="staff-hotstone">
+<option value="staff9">Staff 9</option>
+<option value="staff10">Staff 10</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+</div>
+</div>
+<!-- Facials Category -->
+<div class="service-category">
+<h3>Facials</h3>
+<div class="service-card-container">
+<!-- Gua Sha Facial Card -->
+<div class="service-option-card" data-service="Gua Sha Facial">
+<h4>Gua Sha Facial</h4>
+<p class="service-description">
                   Boosts circulation and releases tension using traditional techniques.
                 </p>
-                <label for="duration-gua">Choose Duration:</label>
-                <select id="duration-gua">
-                  <option value="60min">$110 - 60min</option>
-                  <option value="90min">$170 - 90min</option>
-                </select>
-                <label for="staff-gua">Select Staff:</label>
-                <select id="staff-gua">
-                  <option value="staffA">Staff A</option>
-                  <option value="staffB">Staff B</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Lymphatic Facial Card -->
-              <div class="service-option-card" data-service="Lymphatic Facial">
-                <h4>Lymphatic Facial</h4>
-                <p class="service-description">
+<label for="duration-gua">Choose Duration:</label>
+<select id="duration-gua">
+<option value="60min">$110 - 60min</option>
+<option value="90min">$170 - 90min</option>
+</select>
+<label for="staff-gua">Select Staff:</label>
+<select id="staff-gua">
+<option value="staffA">Staff A</option>
+<option value="staffB">Staff B</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Lymphatic Facial Card -->
+<div class="service-option-card" data-service="Lymphatic Facial">
+<h4>Lymphatic Facial</h4>
+<p class="service-description">
                   Reduces puffiness and detoxifies skin for a luminous complexion.
                 </p>
-                <label for="duration-lymphatic">Choose Duration:</label>
-                <select id="duration-lymphatic">
-                  <option value="60min">$115 - 60min</option>
-                  <option value="90min">$175 - 90min</option>
-                </select>
-                <label for="staff-lymphatic">Select Staff:</label>
-                <select id="staff-lymphatic">
-                  <option value="staffC">Staff C</option>
-                  <option value="staffD">Staff D</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Anti-Aging Facial Card -->
-              <div class="service-option-card" data-service="Anti-Aging Facial">
-                <h4>Anti-Aging Facial</h4>
-                <p class="service-description">
+<label for="duration-lymphatic">Choose Duration:</label>
+<select id="duration-lymphatic">
+<option value="60min">$115 - 60min</option>
+<option value="90min">$175 - 90min</option>
+</select>
+<label for="staff-lymphatic">Select Staff:</label>
+<select id="staff-lymphatic">
+<option value="staffC">Staff C</option>
+<option value="staffD">Staff D</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Anti-Aging Facial Card -->
+<div class="service-option-card" data-service="Anti-Aging Facial">
+<h4>Anti-Aging Facial</h4>
+<p class="service-description">
                   Smooths fine lines and boosts collagen production for youthful skin.
                 </p>
-                <label for="duration-anti">Choose Duration:</label>
-                <select id="duration-anti">
-                  <option value="60min">$120 - 60min</option>
-                  <option value="90min">$180 - 90min</option>
-                </select>
-                <label for="staff-anti">Select Staff:</label>
-                <select id="staff-anti">
-                  <option value="staffE">Staff E</option>
-                  <option value="staffF">Staff F</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Reflexology Facial Card -->
-              <div class="service-option-card" data-service="Reflexology Facial">
-                <h4>Reflexology Facial</h4>
-                <p class="service-description">
+<label for="duration-anti">Choose Duration:</label>
+<select id="duration-anti">
+<option value="60min">$120 - 60min</option>
+<option value="90min">$180 - 90min</option>
+</select>
+<label for="staff-anti">Select Staff:</label>
+<select id="staff-anti">
+<option value="staffE">Staff E</option>
+<option value="staffF">Staff F</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Reflexology Facial Card -->
+<div class="service-option-card" data-service="Reflexology Facial">
+<h4>Reflexology Facial</h4>
+<p class="service-description">
                   Stimulates pressure points to promote overall wellness.
                 </p>
-                <label for="duration-reflex">Choose Duration:</label>
-                <select id="duration-reflex">
-                  <option value="60min">$125 - 60min</option>
-                  <option value="90min">$185 - 90min</option>
-                </select>
-                <label for="staff-reflex">Select Staff:</label>
-                <select id="staff-reflex">
-                  <option value="staffG">Staff G</option>
-                  <option value="staffH">Staff H</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- 4-layer Resurfacing Facial Card -->
-              <div class="service-option-card" data-service="4-layer Resurfacing Facial">
-                <h4>4-layer Resurfacing</h4>
-                <p class="service-description">
+<label for="duration-reflex">Choose Duration:</label>
+<select id="duration-reflex">
+<option value="60min">$125 - 60min</option>
+<option value="90min">$185 - 90min</option>
+</select>
+<label for="staff-reflex">Select Staff:</label>
+<select id="staff-reflex">
+<option value="staffG">Staff G</option>
+<option value="staffH">Staff H</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- 4-layer Resurfacing Facial Card -->
+<div class="service-option-card" data-service="4-layer Resurfacing Facial">
+<h4>4-layer Resurfacing</h4>
+<p class="service-description">
                   Exfoliates, hydrates, and renews skin for a radiant look.
                 </p>
-                <label for="duration-resurfacing">Choose Duration:</label>
-                <select id="duration-resurfacing">
-                  <option value="60min">$130 - 60min</option>
-                  <option value="90min">$190 - 90min</option>
-                </select>
-                <label for="staff-resurfacing">Select Staff:</label>
-                <select id="staff-resurfacing">
-                  <option value="staffI">Staff I</option>
-                  <option value="staffJ">Staff J</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Nails Category -->
-          <div class="service-category">
-            <h3>Nails</h3>
-            <div class="service-card-container">
-              <!-- Spa Manicure Card -->
-              <div class="service-option-card" data-service="Spa Manicure">
-                <h4>Spa Manicure</h4>
-                <p class="service-description">
+<label for="duration-resurfacing">Choose Duration:</label>
+<select id="duration-resurfacing">
+<option value="60min">$130 - 60min</option>
+<option value="90min">$190 - 90min</option>
+</select>
+<label for="staff-resurfacing">Select Staff:</label>
+<select id="staff-resurfacing">
+<option value="staffI">Staff I</option>
+<option value="staffJ">Staff J</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+</div>
+</div>
+<!-- Nails Category -->
+<div class="service-category">
+<h3>Nails</h3>
+<div class="service-card-container">
+<!-- Spa Manicure Card -->
+<div class="service-option-card" data-service="Spa Manicure">
+<h4>Spa Manicure</h4>
+<p class="service-description">
                   Nourishes and shapes nails for a polished look.
                 </p>
-                <label for="duration-manicure">Choose Duration:</label>
-                <select id="duration-manicure">
-                  <option value="60min">$50 - 60min</option>
-                </select>
-                <label for="staff-manicure">Select Staff:</label>
-                <select id="staff-manicure">
-                  <option value="staffX">Staff X</option>
-                  <option value="staffY">Staff Y</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Spa Pedicure Card -->
-              <div class="service-option-card" data-service="Spa Pedicure">
-                <h4>Spa Pedicure</h4>
-                <p class="service-description">
+<label for="duration-manicure">Choose Duration:</label>
+<select id="duration-manicure">
+<option value="60min">$50 - 60min</option>
+</select>
+<label for="staff-manicure">Select Staff:</label>
+<select id="staff-manicure">
+<option value="staffX">Staff X</option>
+<option value="staffY">Staff Y</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Spa Pedicure Card -->
+<div class="service-option-card" data-service="Spa Pedicure">
+<h4>Spa Pedicure</h4>
+<p class="service-description">
                   Exfoliates and revitalizes feet for smooth, refreshed skin.
                 </p>
-                <label for="duration-pedicure">Choose Duration:</label>
-                <select id="duration-pedicure">
-                  <option value="60min">$60 - 60min</option>
-                </select>
-                <label for="staff-pedicure">Select Staff:</label>
-                <select id="staff-pedicure">
-                  <option value="staffZ">Staff Z</option>
-                  <option value="staffAA">Staff AA</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-              <!-- Buff & Shine Manicure Card -->
-              <div class="service-option-card" data-service="Buff & Shine Manicure">
-                <h4>Buff & Shine Manicure</h4>
-                <p class="service-description">
+<label for="duration-pedicure">Choose Duration:</label>
+<select id="duration-pedicure">
+<option value="60min">$60 - 60min</option>
+</select>
+<label for="staff-pedicure">Select Staff:</label>
+<select id="staff-pedicure">
+<option value="staffZ">Staff Z</option>
+<option value="staffAA">Staff AA</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+<!-- Buff & Shine Manicure Card -->
+<div class="service-option-card" data-service="Buff &amp; Shine Manicure">
+<h4>Buff &amp; Shine Manicure</h4>
+<p class="service-description">
                   Buffs nails to a flawless finish and enhances natural shine.
                 </p>
-                <label for="duration-buff">Choose Duration:</label>
-                <select id="duration-buff">
-                  <option value="60min">$55 - 60min</option>
-                </select>
-                <label for="staff-buff">Select Staff:</label>
-                <select id="staff-buff">
-                  <option value="staffBB">Staff BB</option>
-                  <option value="staffCC">Staff CC</option>
-                </select>
-                <button class="select-service-btn">Select</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Navigation Buttons -->
-        <div class="booking-buttons">
-          <button class="prev-btn" id="back-to-step-1">Previous</button>
-          <button class="next-btn" id="to-step-3">Next</button>
-        </div>
-      </div>
-      
+<label for="duration-buff">Choose Duration:</label>
+<select id="duration-buff">
+<option value="60min">$55 - 60min</option>
+</select>
+<label for="staff-buff">Select Staff:</label>
+<select id="staff-buff">
+<option value="staffBB">Staff BB</option>
+<option value="staffCC">Staff CC</option>
+</select>
+<button class="select-service-btn">Select</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="booking-buttons">
+<button class="prev-btn" id="back-to-step-1">Previous</button>
+<button class="next-btn" id="to-step-3">Next</button>
+</div>
+</div>
 <!-- Step 3: Appointment Summary & Payment -->
 <div class="booking-page" id="booking-page-3" style="display: none;">
-  <h2>Appointment Summary & Payment</h2>
-  <div class="summary-container">
-    
-    <!-- Basic Info Summary -->
-    <div id="basic-info-summary"></div>
-
-    <!-- Services Summary -->
-    <div class="service-summary" id="service-summary">
-      <h3>Selected Services</h3>
-      <div id="summary-services-list"></div>
-    </div>
-
-    <!-- Manual Card Form -->
-    <div class="payment-form">
-      <div class="form-group">
-        <label for="card-number">CARD NUMBER</label>
-        <input type="text" id="card-number" name="card-number" />
-      </div>
-      <div class="form-group">
-        <label for="card-holder">CARD HOLDER NAME</label>
-        <input type="text" id="card-holder" name="card-holder" />
-      </div>
-      <div class="form-row">
-        <div class="form-group half">
-          <label for="expiry-date">EXPIRATION DATE</label>
-          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" />
-        </div>
-        <div class="form-group half">
-          <label for="cvv">CVV</label>
-          <input type="text" id="cvv" name="cvv" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Navigation Buttons -->
-    <div class="booking-buttons">
-      <button class="prev-btn" id="back-to-step-2">Previous</button>
-      <button class="pay-btn" id="to-step-4">PAY</button>
-    </div>
-  </div>
+<h2>Appointment Summary &amp; Payment</h2>
+<div class="summary-container">
+<!-- Basic Info Summary -->
+<div id="basic-info-summary"></div>
+<!-- Services Summary -->
+<div class="service-summary" id="service-summary">
+<h3>Selected Services</h3>
+<div id="summary-services-list"></div>
 </div>
-
+<!-- Manual Card Form -->
+<div class="payment-form">
+<div class="form-group">
+<label for="card-number">CARD NUMBER</label>
+<input id="card-number" name="card-number" type="text"/>
+</div>
+<div class="form-group">
+<label for="card-holder">CARD HOLDER NAME</label>
+<input id="card-holder" name="card-holder" type="text"/>
+</div>
+<div class="form-row">
+<div class="form-group half">
+<label for="expiry-date">EXPIRATION DATE</label>
+<input id="expiry-date" name="expiry-date" placeholder="MM/YY" type="text"/>
+</div>
+<div class="form-group half">
+<label for="cvv">CVV</label>
+<input id="cvv" name="cvv" type="text"/>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="booking-buttons">
+<button class="prev-btn" id="back-to-step-2">Previous</button>
+<button class="pay-btn" id="to-step-4">PAY</button>
+</div>
+</div>
+</div>
 <!-- PayPal JavaScript SDK -->
-<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
-
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID¤cy=USD"></script>
 <script>
   // Check if the PayPal button script loads only after the page is fully rendered
   document.addEventListener("DOMContentLoaded", function() {
@@ -405,26 +388,23 @@
     }
   });
 </script>
-
-  
-      <!-- Step 4: Payment Confirmation -->
-      <div class="booking-page" id="booking-page-4" style="display: none;">
-        <div class="confirmation-message">
-          <div class="check-icon">✓</div>
-          <h2>Payment Confirmed</h2>
-          <p>
+<!-- Step 4: Payment Confirmation -->
+<div class="booking-page" id="booking-page-4" style="display: none;">
+<div class="confirmation-message">
+<div class="check-icon">✓</div>
+<h2>Payment Confirmed</h2>
+<p>
             Thank you, your payment has been successfully processed and your booking is now confirmed.
             A confirmation email has been sent to name@example.com.
           </p>
-          <div class="booking-buttons">
-            <button class="prev-btn" id="back-to-step-3">Previous</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Inline JavaScript -->
-    <script>
+<div class="booking-buttons">
+<button class="prev-btn" id="back-to-step-3">Previous</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline JavaScript -->
+<script>
       document.addEventListener("DOMContentLoaded", function () {
         let currentStep = 1;
         const totalSteps = 4;
@@ -569,5 +549,40 @@
         showStep(1);
       });
     </script>
-  </body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const payBtn = document.getElementById("to-step-4");
+  if (payBtn) {
+    payBtn.addEventListener("click", function () {
+      const bookingData = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value,
+        date: document.getElementById("date").value,
+        time: document.getElementById("time-range").value
+      };
+
+      fetch("https://spa-backend-6h4t.onrender.com/api/bookings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(bookingData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert("✅ Booking submitted successfully!");
+        document.getElementById("booking-page-3").style.display = "none";
+        document.getElementById("booking-page-4").style.display = "block";
+      })
+      .catch(error => {
+        console.error("❌ Error submitting booking:", error);
+        alert("Failed to submit booking. Please try again later.");
+      });
+    });
+  }
+});
+</script>
+</body>
 </html>

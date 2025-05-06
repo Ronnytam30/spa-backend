@@ -3,7 +3,7 @@ const router = express.Router();
 const Booking = require('../models/booking');
 const nodemailer = require('nodemailer');
 
-// Setup nodemailer transporter (already working)
+
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -12,10 +12,10 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// 🚀 POST route with conflict checking
+
 router.post('/', async (req, res) => {
   try {
-    // ✅ Check if the time slot is already booked
+    
     const existingBooking = await Booking.findOne({
       date: req.body.date,
       time: req.body.time
@@ -55,3 +55,15 @@ router.post('/', async (req, res) => {
 });
 
 module.exports = router;
+
+
+router.get('/', async (req, res) => {
+  try {
+    const bookings = await Booking.find(); 
+    res.status(200).json(bookings); 
+  } catch (err) {
+    console.error('Error fetching bookings:', err);
+    res.status(500).json({ error: 'Server error fetching bookings' });
+  }
+});
+
