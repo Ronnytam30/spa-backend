@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxe Glow Spa</title>
+    <link rel="stylesheet" href="spastyles.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header>
+      <div class="nav-container">
+        <h1 class="logo">LUXE GLOW SPA</h1>
+        <div class="nav-buttons">
+          <button class="hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#treatments">Treatments</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="booking.html" class="book-btn">Book Now</a>
+        </div>
+      </div>
+      <!-- Hero Section -->
+      <div class="hero-container" id="home">
+        <img
+          src="https://i.pinimg.com/736x/fc/41/a9/fc41a91d046cf32c43b009da5987b09a.jpg"
+          alt="Spa Treatment"
+          class="hero-image"
+        />
+        <div class="hero-text-overlay">
+          <h2>Experience the Perfect Blend of Luxury and Serenity</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTRO SECTION -->
+    <section class="intro">
+      <h3>Welcome to Luxe Glow Spa - Your Oasis of Relaxation</h3>
+      <p>
+        Escape the stresses of daily life and indulge in pure tranquility at Luxe Glow
+        Spa. From soothing massages to rejuvenating facials, our expert therapists provide
+        personalized treatments to restore your mind, body, and soul. Let go, unwind, and
+        experience the ultimate spa retreat. Book your appointment today!
+      </p>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <h3>- SERVICES -</h3>
+      <div class="service-list">
+        <!-- Relax & Massages Service -->
+        <div class="service" data-category="massages">
+          <img
+            src="https://x3jh6o6w.cdn.imgeng.in/assets/uploads/Starhotels-Collezione/la-spa-helvetiabristol/laspa-1.jpg?imgeng=/w_1200/h_630/m_cropbox"
+            alt="Relax & Massages"
+          />
+          <h4>Relax &amp; Massages</h4>
+          <!-- Options Panel (hidden by default) -->
+          <div class="service-options-container">
+            <!-- Swedish Massage Option -->
+            <div class="service-option" data-service="Swedish Massage">
+              <div class="option-header">
+                <span>Swedish Massage</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Experience this relaxation massage with our trained professionals.
+                  This treatment combines Swedish techniques with aromatherapy.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $120</span>
+                  <span>90min - $180</span>
+                  <span>120min - $240</span>
+                </div>
+              </div>
+            </div>
+            <!-- Deep Tissue Massage Option -->
+            <div class="service-option" data-service="Deep Tissue Massage">
+              <div class="option-header">
+                <span>Deep Tissue Massage</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  A focused massage targeting deeper muscle layers for chronic tension relief.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $130</span>
+                  <span>90min - $190</span>
+                </div>
+              </div>
+            </div>
+            <!-- Sport Massage Option -->
+            <div class="service-option" data-service="Sport Massage">
+              <div class="option-header">
+                <span>Sport Massage</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Tailored to enhance performance and speed recovery for active lifestyles.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $125</span>
+                  <span>90min - $185</span>
+                </div>
+              </div>
+            </div>
+            <!-- Shiatsu Massage Option -->
+            <div class="service-option" data-service="Shiatsu Massage">
+              <div class="option-header">
+                <span>Shiatsu Massage</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Uses rhythmic pressure to stimulate acupressure points and restore balance.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $140</span>
+                  <span>90min - $200</span>
+                </div>
+              </div>
+            </div>
+            <!-- Hot Stone Massage Option -->
+            <div class="service-option" data-service="Hot Stone Massage">
+              <div class="option-header">
+                <span>Hot Stone Massage</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Indulge in deep relaxation as warm stones melt away tension.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $150</span>
+                  <span>90min - $210</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facials Service -->
+        <div class="service" data-category="facials">
+          <img
+            src="https://static.wixstatic.com/media/1e26e2_4fffc1b7161740699008491736d0bec4~mv2.jpeg/v1/fill/w_694,h_906,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_%20(58).jpeg"
+            alt="Facials"
+          />
+          <h4>Facials</h4>
+          <div class="service-options-container">
+            <!-- Gua Sha Facial Option -->
+            <div class="service-option" data-service="Gua Sha Facial">
+              <div class="option-header">
+                <span>Gua Sha Facial</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Boosts circulation and releases tension using traditional techniques.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $110</span>
+                  <span>90min - $170</span>
+                </div>
+              </div>
+            </div>
+            <!-- Lymphatic Facial Option -->
+            <div class="service-option" data-service="Lymphatic Facial">
+              <div class="option-header">
+                <span>Lymphatic Facial</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Reduces puffiness and detoxifies skin for a luminous complexion.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $115</span>
+                  <span>90min - $175</span>
+                </div>
+              </div>
+            </div>
+            <!-- Anti-Aging Facial Option -->
+            <div class="service-option" data-service="Anti-Aging Facial">
+              <div class="option-header">
+                <span>Anti-Aging Facial</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Smooths fine lines and boosts collagen production for youthful skin.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $120</span>
+                  <span>90min - $180</span>
+                </div>
+              </div>
+            </div>
+            <!-- Reflexology Facial Option -->
+            <div class="service-option" data-service="Reflexology Facial">
+              <div class="option-header">
+                <span>Reflexology Facial</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Stimulates pressure points to promote overall wellness.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $125</span>
+                  <span>90min - $185</span>
+                </div>
+              </div>
+            </div>
+            <!-- 4-layer Resurfacing Facial Option -->
+            <div class="service-option" data-service="4-layer Resurfacing Facial">
+              <div class="option-header">
+                <span>4-layer Resurfacing</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Exfoliates, hydrates, and renews skin for a radiant look.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $130</span>
+                  <span>90min - $190</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nail Services -->
+        <div class="service" data-category="nails">
+          <img
+            src="https://londonrealskin.com/wp-content/uploads/2022/09/hand-rejuvenation-london-3-1024x683.jpeg"
+            alt="Nail Services"
+          />
+          <h4>Nail Services</h4>
+          <div class="service-options-container">
+            <!-- Spa Manicure Option -->
+            <div class="service-option" data-service="Spa Manicure">
+              <div class="option-header">
+                <span>Spa Manicure</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Nourishes and shapes nails for a polished look.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $50</span>
+                </div>
+              </div>
+            </div>
+            <!-- Spa Pedicure Option -->
+            <div class="service-option" data-service="Spa Pedicure">
+              <div class="option-header">
+                <span>Spa Pedicure</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Exfoliates and revitalizes feet for smooth, refreshed skin.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $60</span>
+                </div>
+              </div>
+            </div>
+            <!-- Buff & Shine Manicure Option -->
+            <div class="service-option" data-service="Buff & Shine Manicure">
+              <div class="option-header">
+                <span>Buff & Shine Manicure</span>
+                <button class="toggle-details-btn">+</button>
+              </div>
+              <div class="option-details">
+                <p class="service-description">
+                  Buffs nails to a flawless finish and enhances natural shine.
+                </p>
+                <div class="service-duration">
+                  <span>60min - $55</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING BANNER -->
+    <section class="book-banner">
+      <a href="booking.html">
+        <img
+          src="https://www.nshoremag.com/wp-content/uploads/2024/11/Breve-Treatment-Room-Final-HiRes-2_1_1125x900-1024x819.jpg"
+          alt="Book Your Services"
+        />
+        <div class="banner-overlay">
+          <h2>BOOK YOUR SERVICES NOW</h2>
+          <p>Make a Reservation -----></p>
+        </div>
+      </a>
+    </section>
+
+    <!-- TREATMENTS SECTION -->
+    <section class="treatments" id="treatments">
+      <h2>The Treatment Experiences</h2>
+      <p class="treatment-intro">
+        At Luxe Glow Spa, every treatment is designed to nourish your body and uplift your spirit.
+        Whether you seek deep relaxation, radiant skin, or perfectly polished nails, our expert therapists
+        are here to provide a personalized and luxurious experience.
+      </p>
+      <div class="treatment-item">
+        <p class="treatment-description">
+          <strong>Relax</strong> - Let go of stress and tension with our soothing massages.
+        </p>
+        <img
+          src="https://oliveetoriel.com/cdn/shop/files/Reflections-IV-By-Mareike-Bohmer---Unframed-noborder.jpg?v=1701396947&width=600"
+          alt="Relax Treatment"
+          class="treatment-image"
+        />
+      </div>
+      <div class="treatment-item">
+        <p class="treatment-description">
+          <strong>Rejuvenate</strong> - Refresh and revitalize your skin with our customized facials.
+        </p>
+        <img
+          src="https://img.freepik.com/premium-photo/crystal-clear-water-pouring-into-glass-white-table-clean-refreshing-concept_1070374-332.jpg"
+          alt="Rejuvenate Treatment"
+          class="treatment-image"
+        />
+      </div>
+      <div class="treatment-item">
+        <p class="treatment-description">
+          <strong>Restore</strong> - Enhance your well-being with luxurious nail services and self-care rituals.
+        </p>
+        <img
+          src="https://www.thespruce.com/thmb/UVRqssKKXehVbgRvLsVHycy0Ymk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1202757463-d946b2abbd374fffbe6ea644dfab06b6.jpg"
+          alt="Restore Treatment"
+          class="treatment-image"
+        />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="contact-info" id="contact">
+      <h4>CONTACT INFO</h4>
+      <p>TEL: 123 456 789</p>
+      <p>539 5th Street West</p>
+      <p>San Francisco CA 94100</p>
+      <p>reservations@luxeglowspa.com</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon">f</a>
+        <a href="#" class="social-icon">i</a>
+        <a href="#" class="social-icon">g</a>
+        <a href="#" class="social-icon">g+</a>
+      </div>
+      <div class="copyright">
+        <p>LuxeGlowSpa.com. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hamburger menu toggle
+        const hamburgerBtn = document.querySelector(".hamburger-btn");
+        const navMenu = document.querySelector(".nav-menu");
+        if (hamburgerBtn) {
+          hamburgerBtn.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+          });
+        }
+  
+        // Toggle service options panel on service click
+        const services = document.querySelectorAll(".service");
+        services.forEach(service => {
+          service.addEventListener("click", function (e) {
+            if (e.target.classList.contains("toggle-details-btn")) return;
+            const optionsContainer = this.querySelector(".service-options-container");
+            if (optionsContainer) {
+              optionsContainer.style.display =
+                optionsContainer.style.display === "block" ? "none" : "block";
+            }
+          });
+        });
+  
+        // Toggle details for each service option when clicking its toggle button
+        const toggleButtons = document.querySelectorAll(".toggle-details-btn");
+        toggleButtons.forEach(btn => {
+          btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const details = this.parentElement.nextElementSibling;
+            if (details) {
+              if (details.style.display === "block") {
+                details.style.display = "none";
+                this.textContent = "+";
+              } else {
+                details.style.display = "block";
+                this.textContent = "-";
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
